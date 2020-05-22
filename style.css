@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.active{
+    color: #E8491D
+}
+header{
+    background: #35424A;
+    color: white;
+    height: 50px;
+    padding-top: 25px;
+    border-bottom: 4px solid #E8491D;
+}
+
+h2{
+    float: left;
+    width: 60%;
+    margin-right: 50px;
+}
+nav{
+    float: right;
+    width: 30%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+li>a{
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+#showcase{
+    min-height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-position: 10%, -90%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.7;
+    padding-top: 100px;
+    color: white;
+}
+h3{
+    font-size: 350%;
+}
+#newsletter{
+    background: #35424A;
+    height: 60px;
+    padding-top: 40px;
+    color: white;
+}
+#newsletter>.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+#newsletter>.container>h4{
+    font-size: 120%;
+    padding-top: 5px;
+}
+#newsletter>.container>input{
+    width: 350px;
+    height: 37px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+#newsletter>.container>button,button{
+    background-color: #E8491D;
+    border: 1px solid #E8491D;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    height: 40px;
+}
+
+#images>.container{
+display: flex;
+}
+
+#images{
+    margin-top: 40px;
+}
+.image{
+    text-align: center;
+    padding: 20px;
+}
+.image>h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+footer{
+    text-align: center;
+    padding-top: 25px;
+    height: 50px;
+    background-color: #E8491D;
+    color: white;
+}
+.black{
+    background-color:#35424A ;
+    color: white;
+    padding: 10px;
+}
+.content{
+    margin-bottom: 10px;
+}
+.left{
+    margin-top: 15px;
+    float: left;
+    width: 50%;
+}
+.right{
+    float: right;
+    width: 40%;
+    margin-top: 10px;
+}
+.clr{
+    clear: both;
+}
+.content>h5, .right>h5, .services>h5, .left>h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.services{
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+@media(max-width: 500px){
+    #images>.container{
+        flex-direction: column;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    h2{
+        float: none;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    nav{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    #showcase{
+        background-size: cover;
+    }
+
+    ul{
+        justify-content: center;
+    }
+
+    .left, .right{
+        float: none;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .left{
+        margin-top: 40px;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+     
+    #newsletter{
+        text-align: center;
+        padding-top: 20px;
+        height: 120px; 
+    }
+
+    #newsletter>.container{
+        flex-direction: column;
+    }
+    #newsletter>.container>h4{
+        font-size: 120%;
+        
+    }
+    #newsletter>.container>input{
+        width: 100%;
+        height: 30px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+    }
+
+    #newsletter>.container>button{
+        height: 40px;
+        margin-top: 10px;
+    }
+
+
+
+        
+}
